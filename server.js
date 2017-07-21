@@ -1,4 +1,5 @@
 /*packages*/
+var path = require('path');
 var express = require('express');
 var hbs = require('hbs');
 var bodyParser = require('body-parser');
@@ -18,6 +19,8 @@ app.use(bodyParser.urlencoded({
 app.use(methodOverride('_method'));
 app.use('/todont', TodontController);
 app.set('view engine', 'hbs');
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 /*home*/
 app.get('/', function(req, res) {

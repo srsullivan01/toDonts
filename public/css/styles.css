@@ -1,0 +1,14 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Zilla Slab', serif;
+
+}
+ .container{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-family: 'Zilla Slab', serif;
+  background-color: ##8080e6;
+}
