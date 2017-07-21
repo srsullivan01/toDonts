@@ -1,0 +1,19 @@
+<h1>add to the list</h1>
+
+<form method="POST" action="/todont">
+  <div>
+    <label for="description">Description: </label>
+    <input type="text" name="description"></input>
+  </div>
+
+  <div>
+    <label for="urgent">Evil: </label>
+    <span>Yes</span><input type="radio" name="urgent" value="true" checked>
+    <span>No</span><input type="radio" name="urgent" value="false" >
+  </div>
+
+  <button>Submit</button>
+</form>
+
+<br/><br/>
+<a href="/todont">Go Back</a>

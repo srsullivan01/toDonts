@@ -1,0 +1,19 @@
+<h1>Edit {{todont.description}}</h1>
+
+<form method="POST" action="/todont/{{id}}?_method=PUT">
+  <div>
+    <label for="description">Description: </label>
+    <input type="text" name="description">{{todont.description}}</input>
+  </div>
+
+  <div>
+    <label for="urgent">Urgent: </label>
+    <span>Yes</span><input type="radio" name="urgent" value="{{todont.urgent}}" checked>
+    <span>No</span><input type="radio" name="urgent" value="false" >
+  </div>
+
+  <button>update todont</button>
+</form>
+
+<br/><br/>
+<a href="/todont">Go Back</a>

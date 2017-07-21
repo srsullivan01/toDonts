@@ -1,0 +1,12 @@
+<h1> You have {{todont.length}} things you should avoid </h1>
+<a href="/todont/new">Create A New Todont</a>
+<ul>
+  {{#each todont}}
+    <li>Description: <a href="/todont/{{@index}}">{{description}}</a></li>
+    <li>Evil: {{urgent}}</li>
+    <form method="POST" action="/todont/{{@index}}?_method=DELETE">
+      <button>DELETE</button>
+    <form>
+    <br>
+  {{/each}}
+</ul>
